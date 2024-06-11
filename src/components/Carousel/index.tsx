@@ -27,8 +27,7 @@ const Carousel: FC = () => {
       className={styles.container}
       style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
     >
-      <img src={imgs[0]} alt="yo" />
-      {/* {imgs.map((url, i) =>
+      {imgs.map((url, i) =>
         i === 0 ? (
           <img
             onLoad={() => setIsloaded(true)}
@@ -39,7 +38,7 @@ const Carousel: FC = () => {
         ) : (
           <img loading="lazy" key={url} src={url} alt={`slide${i}`} />
         )
-      )} */}
+      )}
     </div>
   );
 };
