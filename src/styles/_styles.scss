@@ -1,0 +1,10 @@
+$primary: #f8f200;
+$font-arch: "Archangelsk";
+$font-robo: "Roboto";
+
+@mixin sliced-corners {
+  clip-path: polygon(10% 0, 0 10%, 0 100%, 90% 100%, 100% 90%, 100% 0, 10% 0);
+}
+@mixin sliced-corners__max-width320 {
+  clip-path: polygon(15% 0, 0 20%, 0 100%, 85% 100%, 100% 80%, 100% 0, 15% 0);
+}

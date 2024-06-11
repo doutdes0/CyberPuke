@@ -1,5 +1,6 @@
 import Socials from "../Socials";
 import Carousel from "../Carousel";
+import Card from "../Card";
 import "./index.module.scss";
 
 const Header = () => {
@@ -7,6 +8,7 @@ const Header = () => {
     <header>
       <Socials />
       <Carousel />
+      <Card />
     </header>
   );
 };

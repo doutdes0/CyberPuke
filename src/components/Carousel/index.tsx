@@ -9,19 +9,17 @@ const Carousel: FC = () => {
 
   const timerRef = useRef<null | number>(null);
 
-  function resetTimeout() {
-    if (timerRef.current) {
-      clearTimeout(timerRef.current);
-    }
-  }
-
   useEffect(() => {
     if (!isLoaded) return;
-    resetTimeout();
     timerRef.current = setTimeout(() => {
       index === imgs.length - 1 ? setIndex(0) : setIndex((prev) => prev + 1);
     }, 5000);
-    return () => resetTimeout();
+
+    return () => {
+      if (timerRef.current) {
+        clearTimeout(timerRef.current);
+      }
+    };
   }, [index, isLoaded]);
 
   return (
@@ -29,7 +27,8 @@ const Carousel: FC = () => {
       className={styles.container}
       style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
     >
-      {imgs.map((url, i) =>
+      <img src={imgs[0]} alt="yo" />
+      {/* {imgs.map((url, i) =>
         i === 0 ? (
           <img
             onLoad={() => setIsloaded(true)}
@@ -40,7 +39,7 @@ const Carousel: FC = () => {
         ) : (
           <img loading="lazy" key={url} src={url} alt={`slide${i}`} />
         )
-      )}
+      )} */}
     </div>
   );
 };

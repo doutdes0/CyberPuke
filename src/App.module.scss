@@ -1,8 +1,15 @@
-$font-color: black;
-
-.container {
-  background-color: $font-color;
+@font-face {
+  font-family: "Archangelsk";
+  src: url(./assets/archangelsk-font.ttf);
 }
-.p {
-  color: pink;
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/Roboto-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
