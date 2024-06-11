@@ -1,15 +1,15 @@
 import Socials from "../Socials";
 import Carousel from "../Carousel";
 import Card from "../Card";
-import "./index.module.scss";
+import styles from "./index.module.scss";
 
 const Header = () => {
   return (
-    <header>
+    <div className={styles.header}>
       <Socials />
       <Carousel />
       <Card />
-    </header>
+    </div>
   );
 };
 
