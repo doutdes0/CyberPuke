@@ -1,10 +1,10 @@
-import cblogo from "/cb-logo.svg";
-import fblogo from "/fb-logo.svg";
-import iglogo from "/ig-logo.svg";
-import twitchlogo from "/twitch-logo.svg";
-import vklogo from "/vk-logo.svg";
-import xlogo from "/x-logo.svg";
-import ytlogo from "/yt-logo.svg";
+import cblogo from "/logos/cb-logo.svg";
+import fblogo from "/logos/fb-logo.svg";
+import iglogo from "/logos/ig-logo.svg";
+import twitchlogo from "/logos/twitch-logo.svg";
+import vklogo from "/logos/vk-logo.svg";
+import xlogo from "/logos/x-logo.svg";
+import ytlogo from "/logos/yt-logo.svg";
 import styles from "./index.module.scss";
 
 const Socials: React.FC = () => {

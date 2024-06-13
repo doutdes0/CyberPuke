@@ -3,9 +3,9 @@ import { useState, useEffect, useRef, FC } from "react";
 
 const Carousel: FC = () => {
   const imgs = [
-    "/CyberPuke/slide1.jpeg",
-    "/CyberPuke/slide2.png",
-    "/CyberPuke/slide3.jpeg",
+    "/CyberPuke/imgs/slide1.jpeg",
+    "/CyberPuke/imgs/slide2.png",
+    "/CyberPuke/imgs/slide3.jpeg",
   ];
 
   const [index, setIndex] = useState(0);

@@ -1,0 +1,63 @@
+@use "../../styles/styles" as v;
+
+.promo {
+  height: 100vh;
+  width: calc(100vw - 17px);
+  position: relative;
+  .header {
+    font-family: v.$font-arch, sans-serif;
+    font-size: 62px;
+    line-height: 63.3px;
+  }
+  .info {
+    width: 59.4%;
+    font-family: v.$font-robo, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    .accent {
+      font-weight: 700;
+      color: #6cc8e1;
+    }
+  }
+  img {
+    object-fit: cover;
+    @include v.sliced-corners;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+    height: 100%;
+    width: 83.4%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    .hero {
+      margin-top: 70px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .container_outer {
+      display: flex;
+      gap: 2rem;
+
+      .img_outer {
+        height: 54.56vh;
+        width: 41vw;
+      }
+      .container_inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .img_inner {
+          height: 25.2vh;
+          width: 23.95vw;
+        }
+      }
+    }
+  }
+}
