@@ -6,8 +6,10 @@ import "./index.scss";
 const Header = () => {
   return (
     <header>
-      <Socials />
-      <Carousel />
+      <div className="wrapper">
+        <Socials />
+        <Carousel />
+      </div>
       <Card />
     </header>
   );

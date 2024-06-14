@@ -4,7 +4,7 @@
   width: 624px;
   height: 369px;
   position: absolute;
-  left: 50.8%;
+  right: 16.6%;
   transition: left 0.3s ease;
   bottom: 0;
   background-color: v.$primary;
@@ -33,7 +33,9 @@
 
 @media screen and (max-width: 1024px) {
   .container {
-    left: 35.5%;
+    right: 3.5%;
+    // height: 36.9%;
+    // width: 60.9%;
   }
 }
 @media screen and (max-width: 320px) {
@@ -41,8 +43,8 @@
     width: 320px;
     height: 207px;
     left: 0;
-    bottom: unset;
-    top: 556px;
+    bottom: 0;
+    transform: translate(0, 50%);
     @include v.sliced-corners__max-width320;
     .hero {
       padding: 20px 20px 0;
