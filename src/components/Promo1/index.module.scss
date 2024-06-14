@@ -2,18 +2,15 @@
 
 .promo {
   height: 100vh;
+  //avoid x-overflow, 17px is the vertical scrollbar width
   width: calc(100vw - 17px);
   position: relative;
   .header {
-    font-family: v.$font-arch, sans-serif;
-    font-size: 62px;
-    line-height: 63.3px;
+    @include v.font-arch(62px, 63.3px);
   }
   .info {
     width: 59.4%;
-    font-family: v.$font-robo, sans-serif;
-    font-size: 18px;
-    line-height: 34px;
+    @include v.font-robo(18px, 34px);
     .accent {
       font-weight: 700;
       color: #6cc8e1;
@@ -60,4 +57,7 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 1024px) {
 }

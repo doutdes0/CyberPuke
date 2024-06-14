@@ -16,19 +16,14 @@
     gap: 20px;
     padding: 70px 70px 0;
     p {
-      font-family: v.$font-arch, sans-serif;
-      font-size: 62px;
-      line-height: 63.3px;
+      @include v.font-arch(62px, 63.3px);
     }
     button {
       width: 272px;
       height: 78px;
       background-color: black;
       color: v.$primary;
-      font-size: 24px;
-      line-height: 40px;
-      font-weight: 700;
-      font-family: v.$font-robo, sans-serif;
+      @include v.font-robo(24px, 40px, 700);
       text-decoration: none;
       border: none;
       cursor: pointer;

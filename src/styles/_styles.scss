@@ -8,3 +8,21 @@ $font-robo: "Roboto";
 @mixin sliced-corners__max-width320 {
   clip-path: polygon(15% 0, 0 20%, 0 100%, 85% 100%, 100% 80%, 100% 0, 15% 0);
 }
+
+@mixin font-robo($size, $height, $weight: 400) {
+  font-family: $font-robo, sans-serif;
+  font-size: $size;
+  line-height: $height;
+  @if $weight != 400 {
+    font-weight: $weight;
+  }
+}
+
+@mixin font-arch($size, $height, $weight: 400) {
+  font-family: $font-arch, sans-serif;
+  font-size: $size;
+  line-height: $height;
+  @if $weight != 400 {
+    font-weight: $weight;
+  }
+}
